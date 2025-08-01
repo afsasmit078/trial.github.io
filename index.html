@@ -9,23 +9,33 @@
   </head>
   <body>
     <div class="card">
+      <div class="unit-toggle">
+        <label class="switch">
+          <input type="checkbox" id="unitSwitch" />
+          <span class="slider round"></span>
+        </label>
+        <span id="unitLabel">°C</span>
+      </div>
+
       <div class="search">
         <input type="text" placeholder="Enter city name" spellcheck="false" />
-        <button><img src="img/search.png" alt="" /></button>
+        <button><img src="img/search.png" alt="Search" /></button>
       </div>
+
       <div class="error">
         <p>Invalid city name.</p>
       </div>
+
       <div class="weather">
         <img src="img/rain.png" class="weather-icon" alt="" />
-        <h1 class="temp">22*C</h1>
+        <h1 class="temp">22°C</h1>
         <h2 class="city">New York</h2>
         <div class="details">
           <div class="col">
             <img src="img/humidity.png" alt="" />
             <div>
               <p class="humidity">50%</p>
-              <p>humidity</p>
+              <p>Humidity</p>
             </div>
           </div>
           <div class="col">
@@ -38,6 +48,6 @@
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
